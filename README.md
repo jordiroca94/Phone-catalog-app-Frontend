@@ -14,7 +14,7 @@ Frontend is running on the port 3000
 
 Backend Server is running on the port 3005
 
-In order to test the application you need to open one terminal for each repository and run the following command in each terminal: npm start
+In order to test the application you need to open one terminal for each repository and install node modules ( command: npm install) and after the node modules are installed run the node package modules ( command: npm run).
 
 ## Server routes (API)
 
