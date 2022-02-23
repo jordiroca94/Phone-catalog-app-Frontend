@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# PHONE CATALOG APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Description 
 
-### `npm start`
+Basic phone Catalog where you have a Homepage that displays some telephones, by clicking in each phone you get additional information of the phone. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Client side of the Phone Catalog App has been done using React.Js. Styling done using styled components. Spinner has been done using MUI. 
+Frontend is running on the port 3000 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+- Server-side of the Phone Catalog App has been done using Node.Js, express and MongoDB as a database where you can find 3 telephones. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Backend Server is running on the port 3005
 
-### `npm run build`
+In order to test the application you need to open one terminal for each repository and run the following command in each terminal: npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Server routes (API)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| **Method** | **Route**                          | **Description**                                              | Request  - Body                                          |
+| ---------- | ---------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------- |
+| `GET`      | `/`                                | Renders HomePage.                |                                                          |
+| `GET`      | `/phones/:id`                           | Renders   PhoneDetailsComponent                                |                                                          |
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Models 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Phone model 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+```javascript
+{
+  "brand": { type: String, required: true, unique: true },
+  "image": {type: String, required: true}
+  "title": {type: String, required: true}
+  "description": {type: String, required: true}
+  "color": {type: Array, required: true}
+  "price": {type: Number, required: true}
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## GitHub Repository Link: 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Backend GitHub Repository: [Backend](https://github.com/jordiroca94/Phone-catalog-app-backend)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Frontend GitHub Repository: [Frontend](https://github.com/jordiroca94/Phone-catalog-app-Frontend)
