@@ -24,8 +24,6 @@ In order to test the application you need to open one terminal for each reposito
 
 
 
-## Models 
-
 ## Phone model 
 
 
