@@ -6,11 +6,11 @@
 
 Phone catalog app where you have a Homepage that displays some telephones, by clicking in each phone you get additional information of the phone. 
 
-- Client side of the Phone Catalog App has been done using React.Js. Styling done using styled components. Spinner has been done using MUI. Responsive mobile app (380px screen).
+- Client side of the Phone Catalog App has been done using React.Js. Styling done using styled components. Spinner done using MUI. Responsive mobile app (380px screen).
 
 Frontend is running on the port 3000 
 
-- Server-side of the Phone Catalog App has been done using Node.Js, express and MongoDB as a database where you can find 3 telephones. 
+- Server-side of the Phone Catalog App has been done using Node.Js, express, axios and MongoDB as a database where you can find 3 telephones.
 
 Backend Server is running on the port 3005
 
