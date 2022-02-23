@@ -1,9 +1,5 @@
 # PHONE CATALOG APP
 
-
-![Uploading Phonce Catalog.png…]()
-
-
 ## Description 
 
 Phone catalog app where you have a Homepage that displays some telephones, by clicking in each phone you get additional information of the phone. 
